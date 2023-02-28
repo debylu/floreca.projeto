@@ -1,0 +1,333 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Satisfy&display=swap');
+
+
+/* ***************** CORPO DO SITE ***************** */
+body{
+    /* font-family: 'Roboto', sans-serif; */
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    background: #dedede;
+}
+
+/* ******************* CARROSSEL ******************** */
+
+.carrossel img{
+    height:500px;
+    width:100%;
+}
+
+/* ******************* */
+
+.list{
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    text-align: center;
+}
+
+.list__img{
+    position: relative;
+    margin-right: 19px;
+    float: left;
+    flex-shrink: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: 50%;
+}  
+
+  .list__title{
+    line-height:95%;
+    font-weight: 300;
+    font-size: 20px;
+}
+  
+  .list__title h3{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+  .list__title{
+    text-align: justify;
+}
+
+/********************* dropdown-item ********************/
+.dropdown-item:hover {
+    padding-left: 30px;
+    border-left: 4px solid #c74cc9;
+    color: #783679;
+    transition: .3s;
+}
+/* *****************************************************/
+
+/****************** PRIMEIRO CONTEÚDO ******************/
+
+.first__content {
+    margin-top: 8rem;
+}
+
+.content__title{
+    margin-top: 50px;
+    font-family: 'Satisfy', cursive;
+    font-size: 70px;
+}
+
+.card{
+    width: 15rem;
+    height: 20rem;
+    border-radius: 40px;
+    margin: 20px 0;
+    background-color: #ffffff;
+    position: relative;
+    z-index: 1;
+}
+
+.card a{
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(38, 71, 114);
+    padding: 6px 12px;
+    display: inline-block;
+    font-size: 14px;
+    border: 1px solid #2c3e50;
+    border-radius: 50px;
+    transition: 0.6s all;
+}
+
+.card p{
+    font-size: 14px;
+    transition: 0.6s all;
+}
+
+.card-img-top{
+  border-radius: 40px 40px 0 0;
+  width: 100%;
+  height: 50%;
+}
+
+/* *********************** BANNER ******************* */
+
+.image__banner img {
+    width: 100%;
+}
+
+.image__banner img {
+    display: inline-block;
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+/****************** SEGUNDO CONTEÚDO ******************/
+
+.details{
+    margin: 20px 0;
+    background-color: #ffffff;
+    padding: 30px 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.details h2{
+    font-size: 22px;
+    text-transform: uppercase;
+    transition: 0.6s all;
+}
+
+.details p{
+    font-size: 14px;
+    transition: 0.6s all;
+}
+
+.details a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #fff;
+    background-color: rgb(38, 71, 114);
+    padding: 6px 12px;
+    display: inline-block;
+    font-size: 14px;
+    border: 1px solid #2c3e50;
+    border-radius: 50px;
+    transition: 0.6s all;
+}
+
+.details::before{
+    content: "";
+    width: 5px;
+    height: 100%;
+    background-color: #c07d69da;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transition: 0.6s all;
+}
+
+.details:hover::before{
+    width: 100%;
+}
+
+.details:hover h2,.details:hover p{
+    color: #fff;
+}
+
+.details:hover a{
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+
+/* IMAGENS */
+.details img{
+    width: 100%;
+    height: 50%;
+}
+
+.tittle__second__content{
+    margin-top: 25px;
+}
+
+/***************************************************/
+
+/* *********************AGENDA ***************** */
+
+.scheduling__form {
+    background: linear-gradient(#95976c,#857c27);
+   
+}
+
+.appointment__form__title {
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 30PX;
+}
+
+.client__message {
+    /* margin-right: -150px; */
+    margin: 0 auto;
+    align-items: center;
+   
+}
+
+.button__message {
+    align-items: center;
+    appearance: none;
+    margin-top: -20px;
+    margin-bottom: 20px;
+    background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+    border: 0;
+    border-radius: 6px;
+    box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono",monospace;
+    height: 40px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative; 
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow,transform;
+    font-size: 18px;
+}
+
+.button__message:focus {
+    box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+.button__message:hover {
+    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+     transform: translateY(-2px);    
+}
+
+.button__message:active {
+    box-shadow: #3c4fe0 0 3px 7px inset;
+    transform: translateY(2px);
+} 
+
+/***********************  **************************/
+
+/********** PÁGINAS DE TRATAMENTO PADRÃO ***********/
+
+.box{
+    background-color: #fff;
+}
+.standard_main_title{
+    margin: 40px;
+    border-bottom: 1px solid #000;
+}
+.standard__title{
+    margin: 20px;
+    
+}
+
+.standard__text{
+    text-align: justify;
+    text-indent: 25px;
+}
+
+.standard__photo {
+    margin-top: 10px;
+    margin-bottom: 25px;
+    width: 400px;
+    height: 200px;
+    border-radius: 40px 0 40px 0;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.list li {
+    text-align: left;
+}
+
+/********************* PÁGINA SOBRE *****************/
+
+.about__text{
+    margin-top: 30px;
+}
+/********************* RODAPÉ **********************/
+
+.footer{
+    background:#d4d4d0;
+    
+}
+
+.footer> h4{
+    color: rgb(37, 33, 33);
+    margin-top: 25px;
+    
+}
+
+.footer p a{
+    margin-top: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(14, 15, 15);
+} 
+
+.footer p a:hover {
+    padding-left: 30px;
+    border-left: 4px solid #c5c94c;
+    color: #797036;
+    transition: .4s;
+}
+
+
+
